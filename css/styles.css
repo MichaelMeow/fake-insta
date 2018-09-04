@@ -1,0 +1,195 @@
+/* * {
+  border: 1px solid red;
+} */
+
+body {
+  background: #fafafa;
+
+}
+
+.navBar {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(0, 140, 200);
+  height: 77px;
+  background: white;
+  border-bottom: 1px solid #e6e3e3;
+  transition: all 0.2s ease;
+}
+
+.shrink-nav {
+  height: 45px;
+}
+
+.navBarItems {
+  max-width: 900px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainContent {
+  display: flex;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+
+.fa-instagram {
+  position: relative;
+  font-size: 35px;
+  top: -3px;
+}
+
+.imageFeed img {
+  max-width: 600px;
+  width: 100%;
+}
+.imageFeed {
+  display: inline-block;
+  max-width: 580px;
+  width: 100%;
+  margin-right: 5px;
+}
+
+.stories img {
+  max-width: 300px;
+}
+.stories {
+  width: 300px;
+  display: inline-block;
+}
+
+
+
+.dot {
+  border-radius: 50%;
+  padding: 3px;
+  box-shadow: 0px 0px 0px 2px red;
+  height: 55px;
+  width: 55px;
+  margin-left: 5px;
+}
+
+.stories2 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.stories-title{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.story-container {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.story-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-text-container{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+.relativeStories{
+  position: relative;
+}
+
+.fixedStories{
+  position: fixed;
+  top: 70px;
+}
+
+#line {
+  position:absolute;
+  left: 50px;
+}
+
+#insta-logo {
+  position:absolute;
+  left: 60px;
+  width: 100px;
+  height: 30px;
+  margin-bottom: -10px;
+  z-index:1;
+}
+
+.search {
+  z-index: 2;
+}
+
+.search input{
+  height: 30px;
+  width: 200px;
+}
+
+.nav-links-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 50px;
+}
+
+.nav-links-right {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
+  height: 30px;
+  z-index: 2;
+  background-color: white;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .search{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #insta-logo {
+    width: 66px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .imageFeed {
+    float: none;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stories {
+    display:none;
+  }
+}
